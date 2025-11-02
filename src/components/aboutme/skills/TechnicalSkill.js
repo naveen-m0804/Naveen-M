@@ -25,6 +25,35 @@ export default function TechnicalSkill() {
           <Row className="g-5">
             <Col md={4}>
               <h1
+                style={{ fontSize: "100px", color: "#54faae", fontWeight: 700 }}
+              >
+                90%
+              </h1>
+              <div style={{ paddingLeft: "50px", paddingRight: "50px" }}>
+                <div class="progress">
+                  <div
+                    role={"progressbar"}
+                    id={"pm"}
+                    aria-valuenow={"90"}
+                    aria-valuemin={"0"}
+                    aria-valuemax={"100"}
+                    style={{ width: "90%" }}
+                  ></div>
+                </div>
+                <h2
+                  style={{
+                    color: "#54faae",
+                    fontSize: "25px",
+                    marginTop: "13px",
+                    fontWeight: 700,
+                  }}
+                >
+                  JAVA
+                </h2>
+              </div>
+            </Col>
+            <Col md={4}>
+              <h1
                 style={{ fontSize: "100px", color: "#fe3e57", fontWeight: 700 }}
               >
                 75%
@@ -34,10 +63,10 @@ export default function TechnicalSkill() {
                   <div
                     role={"progressbar"}
                     id={"com"}
-                    aria-valuenow={"85"}
+                    aria-valuenow={"75"}
                     aria-valuemin={"0"}
                     aria-valuemax={"100"}
-                    style={{ width: "85%" }}
+                    style={{ width: "75%" }}
                   ></div>
                 </div>
                 <h2
@@ -63,10 +92,10 @@ export default function TechnicalSkill() {
                   <div
                     role={"progressbar"}
                     id={"pm"}
-                    aria-valuenow={"85"}
+                    aria-valuenow={"75"}
                     aria-valuemin={"0"}
                     aria-valuemax={"100"}
-                    style={{ width: "85%" }}
+                    style={{ width: "75%" }}
                   ></div>
                 </div>
                 <h2
@@ -92,10 +121,10 @@ export default function TechnicalSkill() {
                   <div
                     role={"progressbar"}
                     id={"cr"}
-                    aria-valuenow={"90"}
+                    aria-valuenow={"80"}
                     aria-valuemin={"0"}
                     aria-valuemax={"100"}
-                    style={{ width: "90%" }}
+                    style={{ width: "80%" }}
                   ></div>
                 </div>
                 <h2
@@ -121,10 +150,10 @@ export default function TechnicalSkill() {
                   <div
                     role={"progressbar"}
                     id={"aa"}
-                    aria-valuenow={"81"}
+                    aria-valuenow={"71"}
                     aria-valuemin={"0"}
                     aria-valuemax={"100"}
-                    style={{ width: "81%" }}
+                    style={{ width: "71%" }}
                   ></div>
                 </div>
                 <h2
@@ -150,10 +179,10 @@ export default function TechnicalSkill() {
                   <div
                     role={"progressbar"}
                     id={"org"}
-                    aria-valuenow={"88"}
+                    aria-valuenow={"68"}
                     aria-valuemin={"0"}
                     aria-valuemax={"100"}
-                    style={{ width: "88%" }}
+                    style={{ width: "68%" }}
                   ></div>
                 </div>
                 <h2
@@ -179,10 +208,10 @@ export default function TechnicalSkill() {
                   <div
                     role={"progressbar"}
                     id={"ps"}
-                    aria-valuenow={"86"}
+                    aria-valuenow={"66"}
                     aria-valuemin={"0"}
                     aria-valuemax={"100"}
-                    style={{ width: "86%" }}
+                    style={{ width: "66%" }}
                   ></div>
                 </div>
                 <h2
@@ -208,10 +237,10 @@ export default function TechnicalSkill() {
                   <div
                     role={"progressbar"}
                     id={"react"}
-                    aria-valuenow={"86"}
+                    aria-valuenow={"78"}
                     aria-valuemin={"0"}
                     aria-valuemax={"100"}
-                    style={{ width: "86%" }}
+                    style={{ width: "76%" }}
                   ></div>
                 </div>
                 <h2
@@ -230,17 +259,17 @@ export default function TechnicalSkill() {
               <h1
                 style={{ fontSize: "100px", color: "#54faae", fontWeight: 700 }}
               >
-                90%
+                60%
               </h1>
               <div style={{ paddingLeft: "50px", paddingRight: "50px" }}>
                 <div class="progress">
                   <div
                     role={"progressbar"}
                     id={"pm"}
-                    aria-valuenow={"85"}
+                    aria-valuenow={"60"}
                     aria-valuemin={"0"}
                     aria-valuemax={"100"}
-                    style={{ width: "85%" }}
+                    style={{ width: "60%" }}
                   ></div>
                 </div>
                 <h2
@@ -251,7 +280,7 @@ export default function TechnicalSkill() {
                     fontWeight: 700,
                   }}
                 >
-                  JAVA
+                  Spring Boot
                 </h2>
               </div>
             </Col>

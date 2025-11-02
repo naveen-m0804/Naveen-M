@@ -6,6 +6,19 @@ import git from "../../../images/git.png";
 import github from "../../../images/github.png";
 import cb from "../../../images/cb.png";
 import pm from "../../../images/pm.png";
+import ap from "../../../images/AdobePhotoshop.png";
+import ard from "../../../images/Arduino.png";
+import bl from "../../../images/Blender.png";
+import can from "../../../images/Canva.png";
+import doc from "../../../images/Docker.png";
+import ecl from "../../../images/EclipseIDE.png";
+import fig from "../../../images/Figma.png";
+import fb from "../../../images/Firebase.png";
+import mdb from "../../../images/MongoDB.png";
+import mysql from "../../../images/MySQL.png";
+import sqlD from "../../../images/SQLDeveloper.png";
+import unity from "../../../images/Unity.png";
+import ur from "../../../images/Unreal Engine.png";
 import { Link } from "react-router-dom";
 import Zoom from "react-reveal/Zoom";
 
@@ -38,21 +51,52 @@ export default function Toolkit() {
             <img src={git} alt="" style={{ width: "85%", height: "85%" }} />
           </Col>
           <Col xs={4} md={2} className="tech-icons">
-            <img
-              src={github}
-              alt=""
-              style={{
-                width: "85%",
-                height: "85%",
-                filter: "grayscale(1) invert(1)",
-              }}
-            />
+            <img src={github} alt="" style={{width: "85%", height: "85%", filter: "grayscale(1) invert(1)",}}/>
           </Col>
           <Col xs={4} md={2} className="tech-icons">
             <img src={cb} alt="" style={{ width: "95%", height: "95%" }} />
           </Col>
           <Col xs={4} md={2} className="tech-icons">
             <img src={pm} alt="" style={{ width: "95%", height: "95%" }} />
+          </Col>
+          <Col xs={4} md={2} className="tech-icons">
+            <img src={ap} alt="" style={{ width: "85%", height: "85%" }} />
+          </Col>
+          <Col xs={4} md={2} className="tech-icons">
+            <img src={bl} alt="" style={{ width: "85%", height: "85%" }} />
+          </Col>
+          <Col xs={4} md={2} className="tech-icons">
+            <img src={ard} alt="" style={{ width: "85%", height: "85%" }} />
+          </Col>
+          <Col xs={4} md={2} className="tech-icons">
+            <img src={can} alt="" style={{ width: "85%", height: "85%" }} />
+          </Col>
+          <Col xs={4} md={2} className="tech-icons">
+            <img src={doc} alt="" style={{ width: "85%", height: "85%" }} />
+          </Col>
+          <Col xs={4} md={2} className="tech-icons">
+            <img src={ecl} alt="" style={{ width: "85%", height: "85%" }} />
+          </Col>
+          <Col xs={4} md={2} className="tech-icons">
+            <img src={fig} alt="" style={{ width: "85%", height: "85%" }} />
+          </Col>
+          <Col xs={4} md={2} className="tech-icons">
+            <img src={fb} alt="" style={{ width: "85%", height: "85%" }} />
+          </Col>
+          <Col xs={4} md={2} className="tech-icons">
+            <img src={mdb} alt="" style={{ width: "85%", height: "85%" }} />
+          </Col>
+          <Col xs={4} md={2} className="tech-icons">
+            <img src={mysql} alt="" style={{ width: "85%", height: "85%" }} />
+          </Col>
+          <Col xs={4} md={2} className="tech-icons">
+            <img src={sqlD} alt="" style={{ width: "85%", height: "85%" }} />
+          </Col>
+          <Col xs={4} md={2} className="tech-icons">
+            <img src={unity} alt="" style={{ width: "85%", height: "85%" }} />
+          </Col>
+          <Col xs={4} md={2} className="tech-icons">
+            <img src={ur} alt="" style={{ width: "85%", height: "85%", filter: "grayscale(1) invert(1)", }} />
           </Col>
         </Row>
       </Container>
