@@ -53,7 +53,7 @@ export default function Home() {
                   </li>
                   <li className="socialicons">
                     <a
-                      href="https://www.linkedin.com/in/naveen-m0804/"
+                      href="https://www.linkedin.com/in/naveen-m084/"
                       target="_blank"
                       rel="noreferrer"
                       className="iconcolour  homesocialicons"
