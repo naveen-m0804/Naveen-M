@@ -16,6 +16,7 @@ import fsd from "../../images/fulstack.png";
 import appliai from "../../images/AppliAI.png";
 import ailearn from "../../images/AILearn.png";
 import asure from "../../images/AsureLearning.png";
+import javacert from "../../images/javacert.jpg";
 import Fade from "react-reveal/Fade";
 
 
@@ -28,49 +29,28 @@ export default function Certificate() {
         <Fade left cascade duration={1000} distance="20px">
           <Row className="g-5">
             <Col md={4}>
-              <img
-                src={ucsc}
-                alt=""
-                style={{ width: "100%", height: "100%" }}
-              />
+              <img src={javacert} alt="" style={{ width: "100%", height: "100%" }} />
             </Col>
             <Col md={4}>
-              <img
-                src={ufm}
-                alt=""
-                style={{ width: "100%", height: "100%" }}
-              />
+              <img src={ucsc} alt="" style={{ width: "100%", height: "100%" }} />
             </Col>
             <Col md={4}>
-              <img
-                src={cbta}
-                alt=""
-                style={{ width: "100%", height: "100%" }}
-              />
+              <img src={ufm} alt="" style={{ width: "100%", height: "100%" }} />
             </Col>
             <Col md={4}>
-              <img
-                src={dps}
-                alt=""
-                style={{ width: "100%", height: "100%" }}
-              />
+              <img src={cbta} alt="" style={{ width: "100%", height: "100%" }} />
             </Col>
             <Col md={4}>
-              <img
-                src={IBM}
-                alt=""
-                style={{ width: "100%", height: "100%" }}
-              />
+              <img src={dps} alt="" style={{ width: "100%", height: "100%" }} />
+            </Col>
+            <Col md={4}>
+              <img src={IBM} alt="" style={{ width: "100%", height: "100%" }} />
             </Col>
             <Col md={4}>
               <img src={RAG} alt="" style={{ width: "100%", height: "100%" }} />
             </Col>
             <Col md={4}>
-              <img
-                src={IMD}
-                alt=""
-                style={{ width: "100%", height: "100%" }}
-              />
+              <img src={IMD} alt="" style={{ width: "100%", height: "100%" }} />
             </Col>
             <Col md={4}>
               <img src={VAI} alt="" style={{ width: "100%", height: "100%" }} />

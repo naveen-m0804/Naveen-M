@@ -3,7 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import Zoom from "react-reveal/Zoom";
 import { Fade } from "react-reveal";
 import ucsc from "../../images/CC.jpg";
-import ufm from "../../images/AI-py.jpg";
+import javacert from "../../images/javacert.jpg";
 import cbta from "../../images/GCC.png";
 import { Link } from "react-router-dom";
 import { HiArrowRight } from "react-icons/hi";
@@ -72,7 +72,7 @@ export default function Certification() {
                     <div className="cert-card">
                       <div className="content">
                         <a
-                          href="https://drive.google.com/file/d/1N3bWIMgUbQfIoiIS3bEkbvE1NMRtjnnh/view?usp=sharing"
+                          href="https://www.udemy.com/certificate/UC-fa305bd4-95a8-4096-b089-f6e7ceda5e9b/"
                           target="_blank"
                           rel="noopener noreferrer"
                         >
@@ -81,7 +81,7 @@ export default function Certification() {
                             className="cert-header"
                             style={{ backgroundColor: "white" }}
                           >
-                            {<img className="logo_img" src={ufm} alt={ufm} />}
+                            {<img className="logo_img" src={javacert} alt={javacert} />}
                           </div>
                           <div className="content-details fadeIn-top">
                             <h3
@@ -98,13 +98,13 @@ export default function Certification() {
                           className="cert-body-title"
                           style={{ fontWeight: 700, color: "#fbd9ad" }}
                         >
-                          Artificial Intelligence with python
+                          Java: Complete Java Core for Beginners with Exercises - 2025
                         </h2>
                         <h3
                           className="cert-body-subtitle"
                           style={{ color: "#eb90ff", marginBottom: "0px" }}
                         >
-                          - Infosys
+                          - Udemy
                         </h3>
                       </div>
                     </div>

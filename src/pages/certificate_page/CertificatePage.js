@@ -17,6 +17,7 @@ import fsd from "../../images/fulstack.png";
 import appliai from "../../images/AppliAI.png";
 import ailearn from "../../images/AILearn.png";
 import asure from "../../images/AsureLearning.png";
+import javacert from "../../images/javacert.jpg";
 import Particle from "../../Particle";
 export default function CertificatePage() {
   useEffect(() => {
@@ -43,6 +44,58 @@ export default function CertificatePage() {
                   <Row>
                     <Col md={12} className="mt-5">
                       <Row className="g-5">
+                        <Col md={4}>
+                          <Fade bottom duration={2000} distance="20px">
+                            <div className="cert-card">
+                              <div className="content">
+                                <a
+                                  href="https://www.udemy.com/certificate/UC-fa305bd4-95a8-4096-b089-f6e7ceda5e9b/"
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                >
+                                  <div className="content-overlay"></div>
+                                  <div
+                                    className="cert-header"
+                                    style={{ backgroundColor: "white" }}
+                                  >
+                                    {
+                                      <img
+                                        className="logo_img"
+                                        src={javacert}
+                                        alt={javacert}
+                                      />
+                                    }
+                                  </div>
+                                  <div className="content-details fadeIn-top">
+                                    <h3
+                                      className="content-title"
+                                      style={{ color: "black" }}
+                                    >
+                                      Certificate
+                                    </h3>
+                                  </div>
+                                </a>
+                              </div>
+                              <div className="cert-body">
+                                <h2
+                                  className="cert-body-title"
+                                  style={{ fontWeight: 700, color: "#fbd9ad" }}
+                                >
+                                  Java: Complete Java Core for Beginners with Exercises - 2025
+                                </h2>
+                                <h3
+                                  className="cert-body-subtitle"
+                                  style={{
+                                    color: "#eb90ff",
+                                    marginBottom: "0px",
+                                  }}
+                                >
+                                  - Udemy
+                                </h3>
+                              </div>
+                            </div>
+                          </Fade>
+                        </Col>
                         <Col md={4} className="col-sm-12 col-md4">
                           <Fade bottom duration={2000} distance="20px">
                             <div className="cert-card">
