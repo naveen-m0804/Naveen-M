@@ -1762,3 +1762,22 @@ html {
     padding: 1.5rem;
   }
 }
+
+
+@media (max-width: 767px) {
+  /* 1. Force the container to fill the width */
+  .img-home-main {
+    display: block !important;
+    text-align: center !important;
+    width: 100% !important;
+    margin-top: 30px !important; /* Add space between icons and image */
+  }
+
+  /* 2. Force the image to take up 70% of the screen width */
+  .img-home-main img {
+    width: 70vw !important;    /* Forces image to be 70% of screen width */
+    max-width: 400px !important; /* Stops it from getting too big */
+    height: auto !important;   /* Keeps the aspect ratio correct */
+    max-height: none !important; /* Removes any height limits squashing it */
+  }
+}

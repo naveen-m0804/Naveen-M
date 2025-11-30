@@ -18,6 +18,7 @@ import appliai from "../../images/AppliAI.png";
 import ailearn from "../../images/AILearn.png";
 import asure from "../../images/AsureLearning.png";
 import javacert from "../../images/javacert.jpg";
+import stm from "../../images/stm.png";
 import Particle from "../../Particle";
 export default function CertificatePage() {
   useEffect(() => {
@@ -871,6 +872,58 @@ export default function CertificatePage() {
                                   }}
                                 >
                                   - Microsoft
+                                </h3>
+                              </div>
+                            </div>
+                          </Fade>
+                        </Col>
+                        <Col md={4}>
+                          <Fade bottom duration={2000} distance="20px">
+                            <div className="cert-card">
+                              <div className="content">
+                                <a
+                                  href="https://www.udemy.com/certificate/UC-94aa7121-b7dd-4a7d-af46-a72936bf60fe/"
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                >
+                                  <div className="content-overlay"></div>
+                                  <div
+                                    className="cert-header"
+                                    style={{ backgroundColor: "white" }}
+                                  >
+                                    {
+                                      <img
+                                        className="logo_img"
+                                        src={dps}
+                                        alt={dps}
+                                      />
+                                    }
+                                  </div>
+                                  <div className="content-details fadeIn-top">
+                                    <h3
+                                      className="content-title"
+                                      style={{ color: "black" }}
+                                    >
+                                      Certificate
+                                    </h3>
+                                  </div>
+                                </a>
+                              </div>
+                              <div className="cert-body">
+                                <h2
+                                  className="cert-body-title"
+                                  style={{ fontWeight: 700, color: "#fbd9ad" }}
+                                >
+                                  Software Testing Mastery 
+                                </h2>
+                                <h3
+                                  className="cert-body-subtitle"
+                                  style={{
+                                    color: "#eb90ff",
+                                    marginBottom: "0px",
+                                  }}
+                                >
+                                  - Udemy
                                 </h3>
                               </div>
                             </div>

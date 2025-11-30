@@ -3,7 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import Zoom from "react-reveal/Zoom";
 import emailjs from "emailjs-com";
 import { AiOutlineSend } from "react-icons/ai";
-import { FiPhone, FiAtSign } from "react-icons/fi";
+import { FiPhone, FiAtSign, FiMapPin, FiLinkedin } from "react-icons/fi";
 
 export default function Contactus() {
   const [formData, setFormData] = useState({
@@ -25,10 +25,10 @@ export default function Contactus() {
     }
 
     emailjs.send(
-      "service_r7tfdz1",       // e.g., service_xxx
-      "template_ojcjnzi",      // e.g., template_abc
+      "service_r7tfdz1", 
+      "template_ojcjnzi", 
       formData,
-      "lNjeaaAtJPPOcLuio"           // e.g., aBc123Xyz456 (Public Key)
+      "lNjeaaAtJPPOcLuio" 
     )
     .then((response) => {
       alert(`Thanks ${formData.name}, I will shortly connect with you!`);
@@ -107,20 +107,51 @@ export default function Contactus() {
                     </form>
                   </div>
                 </Col>
+                
                 <Col md={7}>
                   <div className="contacts-details">
+
                     <a href="mailto:mnaveenm2004@gmail.com" className="personal-details">
                       <div className="detailsIcon">
                         <FiAtSign />
                       </div>
                       <p style={{ color: "#fbd9ad" }}>mnaveenm2004@gmail.com</p>
                     </a>
+                    
                     <a href="tel:+918667482293" className="personal-details">
                       <div className="detailsIcon">
                         <FiPhone />
                       </div>
                       <p style={{ color: "#fbd9ad" }}>+91 8667482293</p>
                     </a>
+                    <a
+                      href="https://www.linkedin.com/in/naveen-m084/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="personal-details"
+                    >
+                      <div className="detailsIcon">
+                        <FiLinkedin />
+                      </div>
+                      <p style={{ color: "#fbd9ad" }}>
+                        LinkedIn
+                      </p>
+                    </a>
+                    {/* Location Link to Google Maps */}
+                    <a 
+                      href="https://www.google.com/maps/place/Chennai,+Tamil+Nadu,+India" 
+                      target="_blank" 
+                      rel="noopener noreferrer" 
+                      className="personal-details"
+                    >
+                      <div className="detailsIcon">
+                        <FiMapPin />
+                      </div>
+                      <p style={{ color: "#fbd9ad" }}>
+                        Chennai, Tamil Nadu, India
+                      </p>
+                    </a>
+
                   </div>
                 </Col>
               </Row>
