@@ -18,6 +18,7 @@ import ailearn from "../../images/AILearn.png";
 import asure from "../../images/AsureLearning.png";
 import javacert from "../../images/javacert.jpg";
 import stm from "../../images/stm.png";
+import tata from "../../images/tatacru.jpg";
 import Fade from "react-reveal/Fade";
 
 
@@ -79,6 +80,9 @@ export default function Certificate() {
             </Col>
             <Col md={4}>
               <img src={stm} alt="" style={{ width: "100%", height: "100%" }} />
+            </Col>
+            <Col md={4}>
+              <img src={tata} alt="" style={{ width: "100%", height: "100%" }} />
             </Col>
           </Row>
           {/* </Bounce> */}

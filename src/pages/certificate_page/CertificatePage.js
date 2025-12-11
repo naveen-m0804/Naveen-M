@@ -19,6 +19,7 @@ import ailearn from "../../images/AILearn.png";
 import asure from "../../images/AsureLearning.png";
 import javacert from "../../images/javacert.jpg";
 import stm from "../../images/stm.png";
+import tata from "../../images/tatacru.jpg";
 import Particle from "../../Particle";
 export default function CertificatePage() {
   useEffect(() => {
@@ -924,6 +925,58 @@ export default function CertificatePage() {
                                   }}
                                 >
                                   - Udemy
+                                </h3>
+                              </div>
+                            </div>
+                          </Fade>
+                        </Col>
+                        <Col md={4}>
+                          <Fade bottom duration={2000} distance="20px">
+                            <div className="cert-card">
+                              <div className="content">
+                                <a
+                                  href="https://drive.google.com/file/d/1za8CrZhxZt3Rr5RIheR9uOgv_3wTJ7dF/view?usp=sharing"
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                >
+                                  <div className="content-overlay"></div>
+                                  <div
+                                    className="cert-header"
+                                    style={{ backgroundColor: "white" }}
+                                  >
+                                    {
+                                      <img
+                                        className="logo_img"
+                                        src={tata}
+                                        alt={tata}
+                                      />
+                                    }
+                                  </div>
+                                  <div className="content-details fadeIn-top">
+                                    <h3
+                                      className="content-title"
+                                      style={{ color: "black" }}
+                                    >
+                                      Certificate
+                                    </h3>
+                                  </div>
+                                </a>
+                              </div>
+                              <div className="cert-body">
+                                <h2
+                                  className="cert-body-title"
+                                  style={{ fontWeight: 700, color: "#fbd9ad" }}
+                                >
+                                  Tata Crucible Campus Quiz 2025
+                                </h2>
+                                <h3
+                                  className="cert-body-subtitle"
+                                  style={{
+                                    color: "#eb90ff",
+                                    marginBottom: "0px",
+                                  }}
+                                >
+                                  - Internshala
                                 </h3>
                               </div>
                             </div>
