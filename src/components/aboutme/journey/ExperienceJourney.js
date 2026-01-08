@@ -34,12 +34,12 @@ function ExperienceJourney() {
           Connect Infosystem
           </h5>
           <h6 className="vertical-timeline-element-subtitle mt-2">
-          Wed Designing and Development 
+          Java Full Stack Developer
           </h6>
-          <p>• Developed a full-featured e-commerce site for computer accessories.</p>
-          <p>• Designed responsive and intuitive UI/UX for easy navigation.</p>
-          <p>• Built using HTML, CSS, and JavaScript for a scalable solution.</p>
-          <p>• Performed testing and debugging for cross-browser compatibility.</p>
+          <p>• Developed a full-featured e-commerce website specializing in computer accessories, boosting product visibility and customer engagement by 78%.</p>
+          <p>• Collaborated with the team to implement SQL for data storage and designed HTML/CSS templates, enhancing user interface cleanliness and usability, resulting in a 80% increase in user satisfaction.</p>
+          <p>• Implemented responsive web design using HTML, CSS, and JavaScript, enhancing user experience across devices and improving user engagement by 76%.</p>
+          <p>• Collaborated with the development team to optimize website performance, reducing load times by 50% and significantly enhancing overall usability.</p>
         </VerticalTimelineElement>
 
         <VerticalTimelineElement

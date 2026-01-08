@@ -895,8 +895,8 @@ export default function CertificatePage() {
                                     {
                                       <img
                                         className="logo_img"
-                                        src={dps}
-                                        alt={dps}
+                                        src={stm}
+                                        alt={stm}
                                       />
                                     }
                                   </div>
