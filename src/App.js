@@ -23,11 +23,14 @@ function App() {
   const [load, updateLoad] = useState(true);
 
   useEffect(() => {
-    const timer = setTimeout(() => {
-      updateLoad(false);
-    }, 4000);
-
-    return () => clearTimeout(timer);
+    const handleLoad = () => updateLoad(false);
+    
+    if (document.readyState === "complete") {
+      handleLoad();
+    } else {
+      window.addEventListener("load", handleLoad);
+      return () => window.removeEventListener("load", handleLoad);
+    }
   }, []);
 
   return (
