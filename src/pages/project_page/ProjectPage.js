@@ -7,7 +7,10 @@ import nyc from "../../images/OED.png";
 import ci from "../../images/MDP.png";
 import hd from "../../images/LR.png";
 import pp from "../../images/ES.png";
-import { FaCode } from "react-icons/fa";
+import psm from "../../images/psm.jpg";
+import sda from "../../images/sda.png";
+import vp from "../../images/voidpark.jpg";
+import { FaCode, FaPlay } from "react-icons/fa";
 export default function ProjectPage() {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -45,6 +48,228 @@ export default function ProjectPage() {
                             >
                               <div className="projectContent">
                                 <h5 id={"first"} style={{ color: "#fbd9ad" }}>
+                                PitShop Mechanix
+                                </h5>
+                                <img src={psm} alt="PitShop Mechanix" />
+                                <div className="project--showcaseBtn">
+                                  <a
+                                    href={
+                                      "https://github.com/naveen-m0804/PitShop-Mechanix.git"
+                                    }
+                                    target="_blank"
+                                    rel="noreferrer"
+                                    className={"iconBtn"}
+                                    aria-labelledby={`code`}
+                                  >
+                                    <FaCode
+                                      id={`code`}
+                                      className={"icon"}
+                                      aria-label="Code"
+                                    />
+                                  </a>
+                                  <a
+                                    href={"https://pitshop-mechanix.onrender.com/login"}
+                                    target="_blank"
+                                    rel="noreferrer"
+                                    className={"iconBtn"}
+                                    aria-labelledby={`live`}
+                                  >
+                                    <FaPlay
+                                      id={`live`}
+                                      className={"icon"}
+                                      aria-label="Live"
+                                    />
+                                  </a>
+                                </div>
+                              </div>
+                              <h6>
+                                <p
+                                  className="project--desc"
+                                  style={{
+                                    background: "#fbd9ad",
+                                    color: "#b061df",
+                                    fontWeight: 600,
+                                  }}
+                                >
+                                  PitShop-Mechanix is a comprehensive digital platform designed to streamline 
+                                  vehicle maintenance and emergency repair services through a modern web interface. 
+                                  Built with a React frontend and a Java Spring Boot backend, it efficiently connects 
+                                  vehicle owners with professional mechanics to ensure reliable and timely automotive 
+                                  assistance.
+                                </p>
+                              </h6>
+                              <div
+                                className="project--lang"
+                                style={{
+                                  background: "#fbd9ad",
+                                  color: "#b061df",
+                                  fontWeight: 600,
+                                }}
+                              >
+                                Spring Boot, Java, MongoDB, React.js
+                              </div>
+                            </div>
+                          </Fade>
+                        </Col>
+                        <Col md={3} className="col-sm-12 col-md-4">
+                          <Fade bottom>
+                            <div
+                              key={2}
+                              className="singleProject"
+                              style={{
+                                backgroundColor: "rgb(142 70 186 / 31%)",
+                                border: "1px solid",
+                              }}
+                            >
+                              <div className="projectContent">
+                                <h5 id={"first"} style={{ color: "#fbd9ad" }}>
+                                Void Park
+                                </h5>
+                                <img src={vp} alt="Void Park" />
+                                <div className="project--showcaseBtn">
+                                  <a
+                                    href={
+                                      "https://github.com/naveen-m0804/VoidPark.git"
+                                    }
+                                    target="_blank"
+                                    rel="noreferrer"
+                                    className={"iconBtn"}
+                                    aria-labelledby={`code`}
+                                  >
+                                    <FaCode
+                                      id={`code`}
+                                      className={"icon"}
+                                      aria-label="Code"
+                                    />
+                                  </a>
+                                  <a
+                                    href={"https://void-park.onrender.com/"}
+                                    target="_blank"
+                                    rel="noreferrer"
+                                    className={"iconBtn"}
+                                    aria-labelledby={`live`}
+                                  >
+                                    <FaPlay
+                                      id={`live`}
+                                      className={"icon"}
+                                      aria-label="Live"
+                                    />
+                                  </a>
+                                </div>
+                              </div>
+                              <h6>
+                                <p
+                                  className="project--desc"
+                                  style={{
+                                    background: "#fbd9ad",
+                                    color: "#b061df",
+                                    fontWeight: 600,
+                                  }}
+                                >
+                                  In urban areas like Chennai and other metropolitan cities, finding a parking spot 
+                                  is a daily struggle for commuters, delivery personnel, and visitors. At the same time, 
+                                  thousands of homeowners and landowners have unused private parking areas — driveways, empty plots, 
+                                  or compound spaces — that sit idle for most of the day.
+                                </p>
+                              </h6>
+                              <div
+                                className="project--lang"
+                                style={{
+                                  background: "#fbd9ad",
+                                  color: "#b061df",
+                                  fontWeight: 600,
+                                }}
+                              >
+                                React.js, Express.js, PostgreSQL, JavaScript
+                              </div>
+                            </div>
+                          </Fade>
+                        </Col>
+                        <Col md={3} className="col-sm-12 col-md-4">
+                          <Fade bottom>
+                            <div
+                              key={3}
+                              className="singleProject"
+                              style={{
+                                backgroundColor: "rgb(142 70 186 / 31%)",
+                                border: "1px solid",
+                              }}
+                            >
+                              <div className="projectContent">
+                                <h5 id={"first"} style={{ color: "#fbd9ad" }}>
+                                Smart Dam System - IoT + ML + Computer Vision
+                                </h5>
+                                <img src={sda} alt="Smart Dam System" />
+                                <div className="project--showcaseBtn">
+                                  <a
+                                    href={
+                                      "https://github.com/naveen-m0804/Smart-Dam-System-Using-IOT-ML-CV.git"
+                                    }
+                                    target="_blank"
+                                    rel="noreferrer"
+                                    className={"iconBtn"}
+                                    aria-labelledby={`code`}
+                                  >
+                                    <FaCode
+                                      id={`code`}
+                                      className={"icon"}
+                                      aria-label="Code"
+                                    />
+                                  </a>
+                                  <a
+                                    href={"https://damflow.vercel.app/"}
+                                    target="_blank"
+                                    rel="noreferrer"
+                                    className={"iconBtn"}
+                                    aria-labelledby={`live`}
+                                  >
+                                    <FaPlay
+                                      id={`live`}
+                                      className={"icon"}
+                                      aria-label="Live"
+                                    />
+                                  </a>
+                                </div>
+                              </div>
+                              <h6>
+                                <p
+                                  className="project--desc"
+                                  style={{
+                                    background: "#fbd9ad",
+                                    color: "#b061df",
+                                    fontWeight: 600,
+                                  }}
+                                >
+                                  An intelligent, automated dam monitoring and control platform that combines ESP32-based 
+                                  IoT sensors, Machine Learning rainfall prediction, and Computer Vision human detection 
+                                  with a real-time web dashboard for remote monitoring and automated gate control.
+                                </p>
+                              </h6>
+                              <div
+                                className="project--lang"
+                                style={{
+                                  background: "#fbd9ad",
+                                  color: "#b061df",
+                                  fontWeight: 600,
+                                }}
+                              >
+                                Python, ML, Computer Vision, React.js, JavaScript
+                              </div>
+                            </div>
+                          </Fade>
+                        </Col>
+                        <Col md={3} className="col-sm-12 col-md-4">
+                          <Fade bottom>
+                            <div
+                              key={1}
+                              className="singleProject"
+                              style={{
+                                backgroundColor: "rgb(142 70 186 / 31%)",
+                                border: "1px solid",
+                              }}
+                            >
+                              <div className="projectContent">
+                                <h5 id={"first"} style={{ color: "#fbd9ad" }}>
                                   Online Examination System
                                 </h5>
                                 <img src={nyc} alt={nyc} />
@@ -62,6 +287,19 @@ export default function ProjectPage() {
                                       id={`code`}
                                       className={"icon"}
                                       aria-label="Code"
+                                    />
+                                  </a>
+                                  <a
+                                    href={""}
+                                    target="_blank"
+                                    rel="noreferrer"
+                                    className={"iconBtn"}
+                                    aria-labelledby={`live`}
+                                  >
+                                    <FaPlay
+                                      id={`live`}
+                                      className={"icon"}
+                                      aria-label="Live"
                                     />
                                   </a>
                                 </div>
@@ -125,6 +363,19 @@ export default function ProjectPage() {
                                       aria-label="Code"
                                     />
                                   </a>
+                                  <a
+                                    href={""}
+                                    target="_blank"
+                                    rel="noreferrer"
+                                    className={"iconBtn"}
+                                    aria-labelledby={`live`}
+                                  >
+                                    <FaPlay
+                                      id={`live`}
+                                      className={"icon"}
+                                      aria-label="Live"
+                                    />
+                                  </a>
                                 </div>
                               </div>
                               <h6>
@@ -161,13 +412,13 @@ export default function ProjectPage() {
                           <Fade bottom>
                             <div
                               key={1}
-                              className="singleProjectPage"
+                              className="singleProject"
                               style={{
                                 backgroundColor: "rgb(142 70 186 / 31%)",
                                 border: "1px solid",
                               }}
                             >
-                              <div className="projectPageContent">
+                              <div className="projectContent">
                                 <h5 id={"first"} style={{ color: "#fbd9ad" }}>
                                 Melanoma Detection Using Machine Learning Techniques
                                 </h5>
@@ -186,6 +437,19 @@ export default function ProjectPage() {
                                       id={`code`}
                                       className={"icon"}
                                       aria-label="Code"
+                                    />
+                                  </a>
+                                  <a
+                                    href={""}
+                                    target="_blank"
+                                    rel="noreferrer"
+                                    className={"iconBtn"}
+                                    aria-labelledby={`live`}
+                                  >
+                                    <FaPlay
+                                      id={`live`}
+                                      className={"icon"}
+                                      aria-label="Live"
                                     />
                                   </a>
                                 </div>
@@ -249,6 +513,19 @@ export default function ProjectPage() {
                                       id={`code`}
                                       className={"icon"}
                                       aria-label="Code"
+                                    />
+                                  </a>
+                                  <a
+                                    href={""}
+                                    target="_blank"
+                                    rel="noreferrer"
+                                    className={"iconBtn"}
+                                    aria-labelledby={`live`}
+                                  >
+                                    <FaPlay
+                                      id={`live`}
+                                      className={"icon"}
+                                      aria-label="Live"
                                     />
                                   </a>
                                 </div>

@@ -1280,7 +1280,8 @@ html {
 .project--showcaseBtn {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
+  gap: 1.5rem;
   width: 100%;
 }
 
@@ -1289,11 +1290,6 @@ html {
   text-decoration: none;
   transition: transform 0.5s 0.3s;
 }
-
-.singleProject:hover .project--showcaseBtn a:nth-child(2) {
-  transform: translateX(-140px) scale(1.1) !important;
-}
-
 
 .singleProject .project--desc{
   position: absolute;
@@ -1608,7 +1604,8 @@ html {
 .project--showcaseBtn {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
+  gap: 1.5rem;
   width: 100%;
 }
 
@@ -1616,10 +1613,6 @@ html {
   cursor: pointer;
   text-decoration: none;
   transition: transform 0.5s 0.3s;
-}
-
-.singleProjectPage:hover .project--showcaseBtn a:nth-child(2) {
-  transform: translateX(-225px) scale(1.1) !important;
 }
 
 
@@ -1710,10 +1703,6 @@ html {
     transition: transform 0.5s 0.3s;
     padding: 0.825rem;
   }
-  .singleProjectPage:hover .project--showcaseBtn a:nth-child(2) {
-    transform: translateX(-137px) scale(1.1) !important;
-  }
-  
 }
 @media (max-width: 360px) {
   .singleProjectPage .project--lang{
@@ -1732,10 +1721,6 @@ html {
     transition: transform 0.5s 0.3s;
     padding: 0.825rem;
   }
-  .singleProjectPage:hover .project--showcaseBtn a:nth-child(2) {
-    transform: translateX(-128px) scale(1.1) !important;
-  }
-  
 }
 #resume{
   height:800px;
