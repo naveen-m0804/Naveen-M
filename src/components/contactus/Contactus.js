@@ -5,6 +5,9 @@ import emailjs from "emailjs-com";
 import { AiOutlineSend } from "react-icons/ai";
 import { FiPhone, FiAtSign, FiMapPin, FiLinkedin } from "react-icons/fi";
 
+// Initialize EmailJS with the User ID / Public Key
+emailjs.init("lNjeaaAtJPPOcLuio");
+
 export default function Contactus() {
   const [formData, setFormData] = useState({
     name: "",
@@ -24,10 +27,19 @@ export default function Contactus() {
       return;
     }
 
+    // Map input fields to cover both default/standard placeholders and custom ones
+    const templateParams = {
+      from_name: formData.name,
+      reply_to: formData.email,
+      message: formData.message,
+      name: formData.name,
+      email: formData.email
+    };
+
     emailjs.send(
       "service_r7tfdz1", 
       "template_ojcjnzi", 
-      formData,
+      templateParams,
       "lNjeaaAtJPPOcLuio" 
     )
     .then((response) => {

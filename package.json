@@ -35,7 +35,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "node -e \"process.env.GENERATE_SOURCEMAP='false'; require('child_process').execSync('react-scripts build', {stdio: 'inherit'})\"",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
