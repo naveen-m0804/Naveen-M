@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Yesteryear&family=Raleway:wght@200;300;400;500;600;700&family=Cinzel:wght@600;800&display=swap');
 
 html {
   --section-background-color: linear-gradient(
@@ -1764,5 +1765,466 @@ html {
     max-width: 400px !important; /* Stops it from getting too big */
     height: auto !important;   /* Keeps the aspect ratio correct */
     max-height: none !important; /* Removes any height limits squashing it */
+  }
+}
+
+/* ===================================================== */
+/* Cinematic Quote Screen                                */
+/* ===================================================== */
+
+
+.quote-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999998; /* just below preloader */
+  background: radial-gradient(ellipse at 50% 40%, rgba(20, 10, 50, 1) 0%, rgba(2, 2, 12, 1) 70%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  cursor: pointer;
+  animation: quoteScreenFadeIn 0.8s ease-out forwards;
+}
+
+/* Sci-fi scanline overlay */
+.quote-screen::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(
+    0deg,
+    transparent,
+    transparent 2px,
+    rgba(203, 112, 255, 0.015) 2px,
+    rgba(203, 112, 255, 0.015) 4px
+  );
+  pointer-events: none;
+  z-index: 1;
+  animation: scanlineMove 8s linear infinite;
+}
+
+@keyframes scanlineMove {
+  from { transform: translateY(0); }
+  to { transform: translateY(4px); }
+}
+
+@keyframes quoteScreenFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.quote-screen--exiting {
+  animation: quoteScreenFadeOut 0.9s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+@keyframes quoteScreenFadeOut {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  60% {
+    opacity: 0.3;
+    transform: scale(1.03);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.08);
+    visibility: hidden;
+  }
+}
+
+/* ----- Floating Tech Icons ----- */
+.quote-screen__tech-icons {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.quote-tech-icon {
+  position: absolute;
+  color: rgba(203, 112, 255, 0.85);
+  animation: techIconFadeIn 0.8s ease-out forwards, techIconFloat linear infinite, techIconPulse 3s ease-in-out infinite alternate;
+  filter: drop-shadow(0 0 6px rgba(203, 112, 255, 0.3));
+  transition: opacity 0.3s;
+}
+
+@keyframes techIconFadeIn {
+  from { opacity: 0; transform: scale(0.5); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes techIconFloat {
+  0% {
+    transform: translateY(0) translateX(0) rotate(0deg) scale(1);
+  }
+  25% {
+    transform: translateY(-15px) translateX(10px) rotate(calc(var(--rotate-dir, 1) * 45deg)) scale(1.05);
+  }
+  50% {
+    transform: translateY(-5px) translateX(-8px) rotate(calc(var(--rotate-dir, 1) * 90deg)) scale(0.95);
+  }
+  75% {
+    transform: translateY(-20px) translateX(5px) rotate(calc(var(--rotate-dir, 1) * 135deg)) scale(1.02);
+  }
+  100% {
+    transform: translateY(0) translateX(0) rotate(calc(var(--rotate-dir, 1) * 180deg)) scale(1);
+  }
+}
+
+@keyframes techIconPulse {
+  0% {
+    filter: drop-shadow(0 0 4px rgba(203, 112, 255, 0.2));
+  }
+  100% {
+    filter: drop-shadow(0 0 16px rgba(203, 112, 255, 0.5));
+  }
+}
+
+/* ----- Code bracket decorations ----- */
+.quote-screen__bracket {
+  position: absolute;
+  font-family: 'Orbitron', 'Fira Code', monospace;
+  font-size: clamp(6rem, 15vw, 14rem);
+  font-weight: 400;
+  color: rgba(203, 112, 255, 0.12);
+  text-shadow: 0 0 60px rgba(203, 112, 255, 0.06);
+  z-index: 0;
+  pointer-events: none;
+  line-height: 1;
+  animation: bracketFadeIn 1.5s ease-out 0.5s forwards;
+  opacity: 0;
+}
+
+.quote-screen__bracket--left {
+  left: 5%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.quote-screen__bracket--right {
+  right: 5%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+@keyframes bracketFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-50%) scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(-50%) scale(1);
+  }
+}
+
+/* ----- Ambient particles ----- */
+.quote-screen__particles {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.quote-particle {
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  background: rgba(203, 112, 255, 0.6);
+  border-radius: 50%;
+  animation: particleFloat linear infinite;
+  box-shadow: 0 0 6px 2px rgba(176, 97, 223, 0.3);
+}
+
+@keyframes particleFloat {
+  0% {
+    transform: translateY(0) translateX(0) scale(1);
+    opacity: 0;
+  }
+  15% {
+    opacity: 1;
+  }
+  85% {
+    opacity: 0.6;
+  }
+  100% {
+    transform: translateY(-100vh) translateX(30px) scale(0.3);
+    opacity: 0;
+  }
+}
+
+/* ----- Cinematic lines ----- */
+.quote-screen__line {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(251, 217, 173, 0.1) 15%,
+    rgba(251, 217, 173, 0.5) 50%,
+    rgba(251, 217, 173, 0.1) 85%,
+    transparent 100%
+  );
+  animation: lineExpand 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+  animation-delay: 0.3s;
+  width: 0;
+}
+
+.quote-screen__line--top {
+  top: 28%;
+}
+.quote-screen__line--bottom {
+  bottom: 28%;
+}
+
+@keyframes lineExpand {
+  from {
+    width: 0;
+  }
+  to {
+    width: min(80%, 700px);
+  }
+}
+
+/* ----- Content ----- */
+.quote-screen__content {
+  text-align: center;
+  padding: 2rem 3rem;
+  position: relative;
+  z-index: 2;
+}
+
+.quote-screen__text {
+  font-weight: 300;
+  font-size: clamp(1.3rem, 3.2vw, 2.6rem);
+  color: rgba(251, 217, 173, 0.95);
+  letter-spacing: 0.06em;
+  line-height: 1.8;
+  margin: 0;
+  padding: 0.25em 0;
+  text-shadow: 0 0 20px rgba(251, 217, 173, 0.12);
+}
+
+.quote-word--raleway {
+  font-family: 'Raleway', sans-serif;
+}
+
+.quote-word--yesteryear {
+  font-family: 'Yesteryear', cursive;
+  font-size: 1.45em;
+  line-height: 0.8;
+  vertical-align: middle;
+  text-transform: none;
+  display: inline-block;
+  text-shadow: 0 0 25px rgba(203, 112, 255, 0.3);
+}
+
+.quote-screen__text--second {
+  color: rgba(251, 217, 173, 0.8);
+  font-weight: 200;
+}
+
+.quote-screen__text--third {
+  margin-top: 0.6em;
+  font-family: 'Cinzel', serif;
+  font-weight: 700;
+  font-size: clamp(1.5rem, 4vw, 3.2rem);
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  text-shadow: 0 0 25px rgba(251, 217, 173, 0.18);
+}
+
+/* ----- Word-by-word reveal ----- */
+.quote-word {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: wordReveal 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+}
+
+/* Line 1: "Every developer has a story." */
+.quote-word--1  { animation-delay: 0.3s; }
+.quote-word--2  { animation-delay: 0.5s; }
+.quote-word--3  { animation-delay: 0.65s; }
+.quote-word--4  { animation-delay: 0.78s; }
+.quote-word--5  { animation-delay: 0.9s; }
+
+/* Line 2: "Most never push it to production." */
+.quote-word--6  { animation-delay: 1.3s; }
+.quote-word--7  { animation-delay: 1.45s; }
+.quote-word--8  { animation-delay: 1.6s; }
+.quote-word--9  { animation-delay: 1.72s; }
+.quote-word--10 { animation-delay: 1.82s; }
+.quote-word--11 { animation-delay: 1.95s; }
+
+/* Line 3: "This is mine." */
+.quote-word--12 { animation-delay: 2.5s; }
+.quote-word--13 { animation-delay: 2.7s; }
+.quote-word--14 { animation-delay: 2.9s; }
+
+@keyframes wordReveal {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+    filter: blur(8px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+  }
+}
+
+/* ----- "production" code-style accent ----- */
+.quote-code-accent {
+  color: #54faae;
+  text-shadow: 0 0 15px rgba(84, 250, 174, 0.3), 0 0 30px rgba(84, 250, 174, 0.1);
+  font-weight: 500;
+}
+
+/* ----- Highlight / shine on "This is mine" ----- */
+.quote-highlight {
+  background: linear-gradient(
+    120deg,
+    rgba(251, 217, 173, 0.95) 0%,
+    rgba(203, 112, 255, 1) 25%,
+    rgba(251, 217, 173, 0.95) 50%,
+    rgba(176, 97, 223, 1) 75%,
+    rgba(251, 217, 173, 0.95) 100%
+  );
+  background-size: 300% 100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: wordReveal 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards,
+             textShine 3s ease-in-out 3.2s infinite;
+}
+
+@keyframes textShine {
+  0% {
+    background-position: 100% 50%;
+  }
+  50% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+/* ----- Scroll hint ----- */
+.quote-screen__scroll-hint {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  opacity: 0;
+  animation: hintFadeIn 0.5s ease-out 3.2s forwards;
+}
+
+.scroll-hint-text {
+  font-family: 'Raleway', sans-serif;
+  font-size: 0.7rem;
+  color: rgba(251, 217, 173, 0.35);
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+.scroll-hint-arrow {
+  width: 18px;
+  height: 18px;
+  border-right: 1.5px solid rgba(251, 217, 173, 0.35);
+  border-bottom: 1.5px solid rgba(251, 217, 173, 0.35);
+  transform: rotate(45deg);
+  animation: arrowBounce 1.5s ease-in-out infinite;
+}
+
+@keyframes hintFadeIn {
+  from { opacity: 0; transform: translateX(-50%) translateY(10px); }
+  to   { opacity: 1; transform: translateX(-50%) translateY(0); }
+}
+
+@keyframes arrowBounce {
+  0%, 100% { transform: rotate(45deg) translateY(0); }
+  50%      { transform: rotate(45deg) translateY(6px); }
+}
+
+/* ----- Exiting state: stop all child animations ----- */
+.quote-screen--exiting .quote-word,
+.quote-screen--exiting .quote-screen__line,
+.quote-screen--exiting .quote-screen__scroll-hint,
+.quote-screen--exiting .quote-particle,
+.quote-screen--exiting .quote-tech-icon,
+.quote-screen--exiting .quote-screen__bracket {
+  animation-play-state: paused;
+}
+
+/* ----- Responsive ----- */
+@media (max-width: 767px) {
+  .quote-screen__text {
+    font-size: clamp(1.1rem, 4.5vw, 1.6rem);
+    letter-spacing: 0.03em;
+  }
+  .quote-screen__text--third {
+    font-size: clamp(1.6rem, 7vw, 2.4rem);
+  }
+  .quote-screen__line--top {
+    top: 22%;
+  }
+  .quote-screen__line--bottom {
+    bottom: 22%;
+  }
+  .quote-screen__scroll-hint {
+    bottom: 25px;
+  }
+  .scroll-hint-text {
+    font-size: 0.6rem;
+  }
+  .quote-screen__bracket {
+    font-size: clamp(4rem, 12vw, 8rem);
+  }
+  .quote-screen__bracket--left {
+    left: 2%;
+  }
+  .quote-screen__bracket--right {
+    right: 2%;
+  }
+  .quote-tech-icon {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .quote-screen__bracket {
+    font-size: clamp(6rem, 12vw, 10rem);
+  }
+}
+
+@media (max-width: 400px) {
+  .quote-screen__text {
+    font-size: 1rem;
+    padding: 0.15em 0;
+  }
+  .quote-screen__text--third {
+    font-size: 1.5rem;
+  }
+  .quote-screen__bracket {
+    display: none;
   }
 }

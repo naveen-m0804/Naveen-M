@@ -5,6 +5,7 @@ import "./App.css";
 import "react-vertical-timeline-component/style.min.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Preloader from "./Preloader";
+import QuoteScreen from "./QuoteScreen";
 import MyNav from "./components/navbar/MyNav";
 import { BrowserRouter as Router } from "react-router-dom";
 import Home from "./pages/home_page/HomePage";
@@ -21,9 +22,14 @@ import Toolkit from "./components/aboutme/skills/Toolkit";
 
 function App() {
   const [load, updateLoad] = useState(true);
+  const [showQuote, setShowQuote] = useState(false);
+  const [quoteComplete, setQuoteComplete] = useState(false);
 
   useEffect(() => {
-    const handleLoad = () => updateLoad(false);
+    const handleLoad = () => {
+      updateLoad(false);
+      setShowQuote(true); // Show quote after preloader finishes
+    };
     
     if (document.readyState === "complete") {
       handleLoad();
@@ -33,10 +39,28 @@ function App() {
     }
   }, []);
 
+  const handleQuoteComplete = () => {
+    setShowQuote(false);
+    setQuoteComplete(true);
+  };
+
+  // Determine if we should block scrolling (during preloader OR quote)
+  const blockScroll = load || (showQuote && !quoteComplete);
+
   return (
     <Router>
       <Preloader load={load} />
-      <div className="App" id={load ? "no-scroll" : "scroll"}>
+      {showQuote && !quoteComplete && (
+        <QuoteScreen onComplete={handleQuoteComplete} />
+      )}
+      <div
+        className="App"
+        id={blockScroll ? "no-scroll" : "scroll"}
+        style={{
+          opacity: quoteComplete ? 1 : 0,
+          transition: "opacity 0.6s ease-in-out",
+        }}
+      >
         <MyNav />
         <Routes>
           <Route path="/" element={<Home />}>
@@ -58,3 +82,4 @@ function App() {
 }
 
 export default App;
+

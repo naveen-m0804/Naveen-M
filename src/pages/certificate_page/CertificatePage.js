@@ -21,6 +21,9 @@ import javacert from "../../images/javacert.jpg";
 import stm from "../../images/stm.png";
 import tata from "../../images/tatacru.jpg";
 import Particle from "../../Particle";
+import automaBus from "../../images/AutomaBusAna.jpg";
+import tsd from "../../images/TSD.jpg";
+import uxDes from "../../images/UXWedD.jpg";
 export default function CertificatePage() {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -977,6 +980,162 @@ export default function CertificatePage() {
                                   }}
                                 >
                                   - Internshala
+                                </h3>
+                              </div>
+                            </div>
+                          </Fade>
+                        </Col>
+                        <Col md={4} className="col-sm-12 col-md4">
+                          <Fade bottom duration={2000} distance="20px">
+                            <div className="cert-card">
+                              <div className="content">
+                                <a
+                                  href="https://drive.google.com/file/d/1BG8zC_z-G3cORzryqfKnn6M9uwnxaSZV/view?usp=drive_link"
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                >
+                                  <div className="content-overlay"></div>
+                                  <div
+                                    className="cert-header"
+                                    style={{ backgroundColor: "white" }}
+                                  >
+                                    {
+                                      <img
+                                        className="logo_img"
+                                        src={automaBus}
+                                        alt={automaBus}
+                                      />
+                                    }
+                                  </div>
+                                  <div className="content-details fadeIn-top">
+                                    <h3
+                                      className="content-title"
+                                      style={{ color: "black" }}
+                                    >
+                                      Certificate
+                                    </h3>
+                                  </div>
+                                </a>
+                              </div>
+                              <div className="cert-body">
+                                <h2
+                                  className="cert-body-title"
+                                  style={{ fontWeight: 700, color: "#fbd9ad" }}
+                                >
+                                  Uipath Automation Business Analyst Training
+                                </h2>
+                                <h3
+                                  className="cert-body-subtitle"
+                                  style={{
+                                    color: "#eb90ff",
+                                    marginBottom: "0px",
+                                  }}
+                                >
+                                  - UiPath
+                                </h3>
+                              </div>
+                            </div>
+                          </Fade>
+                        </Col>
+                        <Col md={4} className="col-sm-12 col-md4">
+                          <Fade bottom duration={2000} distance="20px">
+                            <div className="cert-card">
+                              <div className="content">
+                                <a
+                                  href="https://drive.google.com/file/d/13azF3SkONOqsAVF24ZgoTb0xmcjWdbeq/view?usp=drive_link"
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                >
+                                  <div className="content-overlay"></div>
+                                  <div
+                                    className="cert-header"
+                                    style={{ backgroundColor: "white" }}
+                                  >
+                                    {
+                                      <img
+                                        className="logo_img"
+                                        src={uxDes}
+                                        alt={uxDes}
+                                      />
+                                    }
+                                  </div>
+                                  <div className="content-details fadeIn-top">
+                                    <h3
+                                      className="content-title"
+                                      style={{ color: "black" }}
+                                    >
+                                      Certificate
+                                    </h3>
+                                  </div>
+                                </a>
+                              </div>
+                              <div className="cert-body">
+                                <h2
+                                  className="cert-body-title"
+                                  style={{ fontWeight: 700, color: "#fbd9ad" }}
+                                >
+                                  UX Design for Web Developers
+                                </h2>
+                                <h3
+                                  className="cert-body-subtitle"
+                                  style={{
+                                    color: "#eb90ff",
+                                    marginBottom: "0px",
+                                  }}
+                                >
+                                  - Infosys Springboard
+                                </h3>
+                              </div>
+                            </div>
+                          </Fade>
+                        </Col>
+                        <Col md={4} className="col-sm-12 col-md4">
+                          <Fade bottom duration={2000} distance="20px">
+                            <div className="cert-card">
+                              <div className="content">
+                                <a
+                                  href="https://www.theforage.com/completion-certificates/8eNRcRqBZM9HLvwGw/2jxESPvorR7fmypXj_8eNRcRqBZM9HLvwGw_t9woFspfrArzcDBS9_1777966893628_completion_certificate.pdf"
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                >
+                                  <div className="content-overlay"></div>
+                                  <div
+                                    className="cert-header"
+                                    style={{ backgroundColor: "white" }}
+                                  >
+                                    {
+                                      <img
+                                        className="logo_img"
+                                        src={tsd}
+                                        alt={tsd}
+                                      />
+                                    }
+                                  </div>
+                                  <div className="content-details fadeIn-top">
+                                    <h3
+                                      className="content-title"
+                                      style={{ color: "black" }}
+                                    >
+                                      Certificate
+                                    </h3>
+                                  </div>
+                                </a>
+                              </div>
+                              <div className="cert-body">
+                                <h2
+                                  className="cert-body-title"
+                                  style={{ fontWeight: 700, color: "#fbd9ad" }}
+                                >
+                                  Technology Software Development
+                                </h2>
+                                <h3
+                                  className="cert-body-subtitle"
+                                  style={{
+                                    color: "#eb90ff",
+                                    marginBottom: "0px",
+                                  }}
+                                >
+                                  - Forage
                                 </h3>
                               </div>
                             </div>
